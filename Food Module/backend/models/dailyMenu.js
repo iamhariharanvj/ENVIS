@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dailymenu = new mongoose.Schema({
+const menuSchema = new mongoose.Schema({
     breakfast: {
         type: 'array'
     },
@@ -16,3 +16,7 @@ const dailymenu = new mongoose.Schema({
 
 
 })
+
+const DailyMenu = mongoose.Model("Menu", menuSchema);
+
+module.exports = DailyMenu;
