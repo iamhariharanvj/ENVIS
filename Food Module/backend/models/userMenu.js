@@ -2,16 +2,23 @@ const mongoose = require('mongoose');
 
 const menuSchema = new mongoose.Schema({
     breakfast: {
-        type: 'array'
+        type: 'array',
+        quantity: 'array'
     },
     lunch: {
-         type: 'array' 
+        type: 'array' ,
+        quantity: 'array'
+
         },
     snacks: {
-        type: 'array'
+        type: 'array',
+        quantity: 'array'
+
     },
     dinner: { 
-        type: 'array' 
+        type: 'array',
+        quantity: 'array'
+
     },
 
 
